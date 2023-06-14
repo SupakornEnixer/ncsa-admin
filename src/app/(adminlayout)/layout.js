@@ -17,16 +17,7 @@ function AdminLayout({ children }) {
       <Sidebar collapsed={collapsed} />
       <Layout>
         <Appbar collapsed={collapsed} onClick={() => setCollapsed(!collapsed)} />
-        <Content
-          style={{
-            margin: '24px 16px',
-            padding: 24,
-            minHeight: 280,
-            background: colorBgContainer,
-          }}
-        >
-          {children}
-        </Content>
+        {children}
       </Layout>
     </Layout>
   )
