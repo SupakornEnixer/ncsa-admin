@@ -8,9 +8,6 @@ const { Content } = Layout
 
 function AdminLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false)
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken()
 
   return (
     <Layout style={{ height: '100vh' }}>
