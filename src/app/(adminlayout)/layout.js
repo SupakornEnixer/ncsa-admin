@@ -15,9 +15,11 @@ function AdminLayout({ children }) {
   return (
     <Layout style={{ height: '100vh' }}>
       <Sidebar collapsed={collapsed} />
-      <Layout>
+      <Layout style={{ padding: '1.5rem' }}>
         <Appbar collapsed={collapsed} onClick={() => setCollapsed(!collapsed)} />
-        {children}
+        <div style={{ height: '100vh', marginTop: '1rem' }}>
+          {children}
+        </div>
       </Layout>
     </Layout>
   )

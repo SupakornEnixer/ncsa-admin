@@ -13,6 +13,8 @@ function Appbar({ collapsed, onClick = () => { } }) {
       style={{
         padding: 0,
         background: colorBgContainer,
+        borderRadius: '.5rem',
+        boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1)'
       }}
     >
       <Button
