@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from 'antd'
 import Sider from 'antd/es/layout/Sider'
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons'
+import { UserOutlined, LaptopOutlined, NotificationOutlined, UploadOutlined, VideoCameraOutlined } from '@ant-design/icons'
 
 function Sidebar({ collapsed }) {
 
@@ -30,14 +30,21 @@ function Sidebar({ collapsed }) {
     <Sider trigger={null} collapsible collapsed={collapsed}>
       <div className="demo-logo-vertical" />
       <Menu
+        theme="dark"
         mode="inline"
         defaultSelectedKeys={['1']}
-        defaultOpenKeys={['sub1']}
-        style={{
-          height: '100%',
-          borderRight: 0,
-        }}
-        items={items2}
+        items={[
+          {
+            key: '1',
+            icon: <UserOutlined />,
+            label: 'nav 1',
+          },
+          {
+            key: '3',
+            icon: <UploadOutlined />,
+            label: 'nav 3',
+          },
+        ]}
       />
     </Sider>
   )

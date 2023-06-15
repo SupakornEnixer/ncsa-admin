@@ -10,11 +10,11 @@ function AdminLayout({ children }) {
   const [collapsed, setCollapsed] = useState(false)
 
   return (
-    <Layout style={{ height: '100vh' }}>
+    <Layout style={{ height: '100%' }}>
       <Sidebar collapsed={collapsed} />
       <Layout style={{ padding: '1.5rem' }}>
         <Appbar collapsed={collapsed} onClick={() => setCollapsed(!collapsed)} />
-        <div style={{ height: '100vh', marginTop: '1rem' }}>
+        <div style={{ padding: '2rem' }}>
           {children}
         </div>
       </Layout>

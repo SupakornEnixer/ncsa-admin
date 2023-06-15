@@ -1,0 +1,52 @@
+.head_panel {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.head_panel .title {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.head_panel .title h2 {
+  border-right: 1px solid gray;
+  padding-right: 1rem;
+}
+
+.content {
+  background-color: #fff;
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, .1);
+  border-radius: .5rem;
+}
+
+.filter {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.filter span {
+  font-size: .75rem;
+}
+
+.filter .input {
+  max-width: 15rem;
+  width: 100%;
+}
+
+.button_panel {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
