@@ -6,7 +6,11 @@ function DashboardPage() {
 
   const columns = useMemo(
     () => [
-      { accessorKey: 'address', header: 'ที่อยู่' },
+      {
+        accessorKey: 'address',
+        header: 'ที่อยู่',
+        headerAlign: 'start'
+      },
       {
         accessorKey: 'option',
         header: '',
