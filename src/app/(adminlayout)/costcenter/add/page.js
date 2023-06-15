@@ -2,38 +2,12 @@
 import { Breadcrumb, Button, Dropdown } from 'antd'
 import style from './style.module.css'
 import { useRouter } from 'next/navigation'
-import { MenuOutlined } from '@ant-design/icons'
+import { CloseCircleOutlined, CopyOutlined, DeleteOutlined, EyeOutlined, MenuOutlined, PlusCircleOutlined, PrinterOutlined } from '@ant-design/icons'
 
 export default function CostCenterAddPage() {
 
   const router = useRouter()
 
-  const items = [
-    {
-      label: 'สร้างใหม่',
-      key: '0',
-    },
-    {
-      label: 'คัดลอก',
-      key: '1',
-    },
-    {
-      label: 'ดูตัวอย่าง',
-      key: '3',
-    },
-    {
-      label: 'พิมพ์',
-      key: '4',
-    },
-    {
-      label: 'ยกเลิก',
-      key: '5',
-    },
-    {
-      label: 'ลบ',
-      key: '6',
-    },
-  ]
 
   return (
     <>
@@ -53,18 +27,7 @@ export default function CostCenterAddPage() {
             ]}
           />
         </div>
-        <div>
-          <Dropdown
-            menu={{
-              items,
-            }}
-            trigger={['click']}
-          >
-            <Button onClick={(e) => e.preventDefault()}>
-              <MenuOutlined />
-            </Button>
-          </Dropdown>
-        </div>
+        <div />
       </div>
     </>
   )
