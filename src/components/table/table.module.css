@@ -1,0 +1,50 @@
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.table .td,
+.table .th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  height: 3rem;
+}
+
+.table tbody .tr {
+  cursor: pointer;
+}
+
+.table tbody .tr:hover {
+  background-color: #F9F9FB !important;
+}
+
+.table .th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f3f2f7;
+}
+
+.table .th_checkbbox {
+  width: 3rem;
+  border: 1px solid #dddddd;
+  border-left: unset;
+  border-right: unset;
+  text-align: center;
+  background-color: #f3f2f7;
+}
+
+.table .td_checkbbox {
+  width: 3rem;
+  border: 1px solid #dddddd;
+  border-left: unset;
+  border-right: unset;
+  text-align: center;
+  background-color: white;
+}
+
+.table .th_checkbbox .checkbox {
+  cursor: pointer;
+}
